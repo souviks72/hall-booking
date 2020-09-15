@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "280ab41d-9f2e-4b86-abe8-f956f2c36db9",
+		"name": "HallBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Soham\",\r\n    \"date\": \"17-09-2020\",\r\n    \"start\": \"12PM\",\r\n    \"end\": \"6PM\",\r\n    \"roomId\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					]
+				},
+				"description": "Booking A Room Created Using API"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Venus\",\r\n    \"numSeats\": \"50\",\r\n    \"pricePerHour\": \"4000\",\r\n    \"amenities\": [\"AC\",\"Delux Seats\",\"Dolby Sound\"]   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/room",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"room"
+					]
+				},
+				"description": "Creating a room using the API"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Souvik\",\r\n    \"date\": \"16-09-2020\",\r\n    \"start\": \"12PM\",\r\n    \"end\": \"6PM\",\r\n    \"roomId\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					]
+				},
+				"description": "Booking a room already created in the server"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"City Center Inox\",\r\n    \"numSeats\": \"120\",\r\n    \"pricePerHour\": \"70000\",\r\n    \"amenities\": [\"AC\",\"3-D\",\"Dolby Sound\",\"Delux Seats\",\"Security\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/room",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"room"
+					]
+				},
+				"description": "Creating a room"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/customerDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/customerDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customerDetails"
+					]
+				},
+				"description": "Getting customer details"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/roomDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/roomDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roomDetails"
+					]
+				},
+				"description": "Getting room details"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Soham\",\r\n    \"date\": \"17-09-2020\",\r\n    \"start\": \"12PM\",\r\n    \"end\": \"6PM\",\r\n    \"roomId\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					]
+				},
+				"description": "Booking a room"
+			},
+			"response": []
+		},
+		{
+			"name": "Room Creation Heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Venus\",\r\n    \"numSeats\": 40,\r\n    \"pricePerHour\": 30000,\r\n    \"amenities\": [\"AC\",\"3-D\"] \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hall-booking-zenclass.herokuapp.com/room",
+					"protocol": "https",
+					"host": [
+						"hall-booking-zenclass",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"room"
+					]
+				},
+				"description": "Create Room with fields: example\r\nname: venus\r\nnumSeats: 60\r\namenities:[\"AC\",\"3-D\"]\r\npricePerHour: 40000"
+			},
+			"response": []
+		},
+		{
+			"name": "Room Booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Soham\",\r\n    \"date\": \"16-09-2020\",\r\n    \"start\": \"12PM\",\r\n    \"end\": \"6PM\",\r\n    \"roomId\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hall-booking-zenclass.herokuapp.com/book",
+					"protocol": "https",
+					"host": [
+						"hall-booking-zenclass",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"book"
+					]
+				},
+				"description": "Booking a room, example\r\nname: Souvik,\r\ndate: 16-09-2020,\r\nstart: 12PM,\r\nend: 6PM,\r\nroomId: 1"
+			},
+			"response": []
+		},
+		{
+			"name": "Room Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hall-booking-zenclass.herokuapp.com/roomDetails",
+					"protocol": "https",
+					"host": [
+						"hall-booking-zenclass",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"roomDetails"
+					]
+				},
+				"description": "Get an array of rooms with details of bookkings(if booked)"
+			},
+			"response": []
+		},
+		{
+			"name": "Customer details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hall-booking-zenclass.herokuapp.com/customerDetails",
+					"protocol": "https",
+					"host": [
+						"hall-booking-zenclass",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"customerDetails"
+					]
+				},
+				"description": "Get details of customers with their room bookings"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
